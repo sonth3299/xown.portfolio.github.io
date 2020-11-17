@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Animated</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+  body {
+    background-image: url(D:/Dowload/wdt/port%20online/image/bgr.jpg);
+    background-color: #cccccc;
+    color: white;
+  }
+  
+  
+.footer {
+   position: fixed-bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #222222;
+   color: white;
+   text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  margin: 5px 1px;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+
+  .fa-facebook {
+  background: white;
+  color: black;
+}
+
+.fa-behance {
+  background: white;
+  color: black;
+}
+
+.fa-pinterest {
+  background: white;
+  color: black;
+}
+.fa-youtube {
+  background: white;
+  color: black;
+}
+
+.buttons {
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.containers {
+    
+    padding-right: 450px;
+    padding-left: 450px;
+  
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.columngal {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+.rowgal::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  
+
+</style>
+
+</head>
+
+<body style="height: auto;">
+
+<nav class="navbar navbar-expand-sm  navbar-dark fixed-top " style="background-color: #222222">
+  <div class="container-fluid">
+  
+  <ul class="navbar-nav ml-auto ;">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item" style="padding-left: 50px">
+      <a class="nav-link" href="About_Me.html">ABOUT ME</a>
+    </li>
+    </ul>
+
+<a class="navbar-brand;text-center" href="index.html" style="padding-left: 100px;padding-right: 100px;font-size: 50px ;color: white">XOWN</a>
+
+    <ul class="navbar-nav mr-auto ;">
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html" style="padding-right: 50px">GALLERY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">CONTACT</a>
+    </li>
+    </ul>
+    </div>
+</nav>
+<br><br><br><br><br><br>
+
+<dir class="container">
+  <button class="buttons" onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+
+
+</dir>
+
+
+<h2 style="text-align: center;">Animated</h2><br>
+<section class="container">
+
+
+
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 1.jpg" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 2.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 3.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 4.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 5.jpg" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 6.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 7.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 8.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 9.jpg" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 10.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 11.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 12.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 13.jpg" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 14.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/bgr/bgr 15.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/char/char.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/char/char1.jpg" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/char/char2.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/char/char3.jpg" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/anim/c40.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/anim/c41.gif" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/anim/c42.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/anim/c43.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/anim/c44.gif" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-container w3-quarter">
+    <img src="D:/Dowload/wdt/port%20online/image/anim/c45.gif" alt="first image" style="width:100%;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+ 
+</div>
+
+
+
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover w3-medium w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom" style="text-align: center;background-color: #132138;padding: 10px">
+    <img id="img01" style="width:850px;height:auto;">
+    <div id="caption"></div>
+  </div>
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+
+}
+</script>
+
+ </section>
+
+<br>
+
+<div class="footer">
+  <a href="https://www.facebook.com/T.Xown/" class="fa fa-facebook"></a>
+  <a href="https://www.behance.net/Xown" class="fa fa-behance"></a>
+  <a href="https://www.pinterest.com/THXown" class="fa fa-pinterest"></a>
+  <a href="https://www.youtube.com/channel/UCVlrMgt-C0-qkifxMxHFt3w?view_as=subscriber" class="fa fa-youtube"></a>
+</div>
+
+</body>
+</html>

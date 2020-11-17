@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>About Me</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	body {
+		
+		background-color: #001110;
+		color: white;
+	}
+	
+	
+.footer {
+   position: fixed-bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #222222;
+   color: white;
+   text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  margin: 5px 1px;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+
+  .fa-facebook {
+  background: white;
+  color: black;
+}
+
+.fa-behance {
+  background: white;
+  color: black;
+}
+.fa-pinterest {
+  background: white;
+  color: black;
+}
+.fa-youtube {
+  background: white;
+  color: black;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  border-radius: 30px;
+}
+
+.containers {
+		
+		width: 60%;
+		margin:auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		border-radius: 30px;
+		background-color: #132138;
+		padding: 20px;
+	
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+img {
+	border-radius: 4px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+
+.circular-chart.id .circle {
+  stroke: #cc5e9e;
+}
+
+.circular-chart.ai .circle {
+  stroke: #ed8021;
+}
+
+.circular-chart.ps .circle {
+  stroke: #0d8cdb;
+}
+.circular-chart.maya .circle {
+  stroke: #16c9a3;
+}
+.circular-chart.ae .circle {
+  stroke: #2168db;
+}
+.circular-chart.pr .circle {
+  stroke: #905adb;
+}
+.circular-chart.moho .circle {
+  stroke: #d96b43;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 5px;
+  text-anchor: middle;
+}
+
+.containerbar {
+  margin: 30px;
+  width: 500px;
+
+}
+
+.containerbar1 {
+  margin: 30px;
+  width: 500px;
+  text-align: center;
+
+}
+
+.progress1 {
+  padding: 3px;
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+}
+
+.progress-bar1 {
+  height: 17px;
+  border-radius: 30px;  
+  transition-property: width;    
+}
+
+.progress-moved .progress-bar1 {
+  width: 50%; 
+  background-color: #EF476F;  
+  animation: progressAnimation 1s;
+}
+
+@keyframes progressAnimation {
+  0%   { width: 0%; background-color: #EF476F;}
+  100% { width: 50%; background-color: #EF476F; }
+}
+
+.progress-moved2 .progress-bar1 {
+  width: 70%; 
+  background-color: #2ff77f;  
+  animation: progress2Animation 1s;
+}
+
+@keyframes progress2Animation {
+  0%   { width: 0%; background-color: #2ff77f;}
+  100% { width: 70%; background-color: #2ff77f; }
+}
+
+.progress-moved3 .progress-bar1 {
+  width: 65%; 
+  background-color: #e3a41b;  
+  animation: progress3Animation 1s;
+}
+
+@keyframes progress3Animation {
+  0%   { width: 0%; background-color: #e3a41b;}
+  100% { width: 65%; background-color: #e3a41b; }
+}
+
+.progress-moved4 .progress-bar1 {
+  width: 85%; 
+  background-color: #645aed;  
+  animation: progress4Animation 1s;
+}
+
+@keyframes progress4Animation {
+  0%   { width: 0%; background-color: #645aed;}
+  100% { width: 85%; background-color: #645aed; }
+}
+
+</style>
+
+</head>
+
+<body style="height: auto;">
+
+<nav class="navbar navbar-expand-sm  navbar-dark fixed-top " style="background-color: #222222">
+  <div class="container-fluid">
+  
+  <ul class="navbar-nav ml-auto ;">
+  	<li class="nav-item">
+      <a class="nav-link" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item" style="padding-left: 50px">
+      <a class="nav-link" href="About_Me.html">ABOUT ME</a>
+    </li>
+    </ul>
+
+<a class="navbar-brand;text-center" href="index.html" style="padding-left: 100px;padding-right: 100px;font-size: 50px ;color: white">XOWN</a>
+
+    <ul class="navbar-nav mr-auto ;">
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html" style="padding-right: 50px">GALLERY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">CONTACT</a>
+    </li>
+    </ul>
+    </div>
+</nav>
+
+
+
+<section class="container-fluid" style="background-image: url(D:/Dowload/wdt/port%20online/image/bgr.jpg)">
+	<div class="container">
+	
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<div class="row">
+<div class="col-lg-4">
+	<img src="D:/Dowload/wdt/port%20online/image/self_me.jpg" style="width: 100%">
+</div>	
+<div class="col-lg-8">
+	<br><br><br>
+	<h2 class="pt-4" style="text-align: center;color: white">HELLO! I'M TRAN HOANG SON , I'M A DESIGNER.</h2>
+				<p style="color: #f0f0f0">I'm a student at FPT University. My major of study is graphic design. With a passion for animation and movies, I want to create many perfect products for everyone to enjoy and feel. On the other hand, I also want through my works, people will understand me better.
+				</p>
+</div>	
+	</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+</section>
+
+<section><div class="containers">
+	
+	<h1 style="text-align: center;color: white">Information</h1>
+	<br>
+	<div class="row">
+		
+		<div class="col-lg-5" style="text-align: left;padding-left: 320px">
+			<p>Name :</p>
+	        <p>Birthday :</p>
+	        <p>Email :</p>
+            <p>Address :</p>
+            <p>Major :</p>
+            <p>Education :</p>
+		</div>
+		<div class="col-lg-7">
+			<p>Tran Hoang Son</p>
+	        <p>3/2/1999</p>
+	        <p>Sonthha130238@fpt.edu.vn</p>
+            <p>Number 07, Pham Tuc Minh Street,Dinh Ke Ward, Bac Giang City.</p>
+            <p>Graphic Design</p>
+            <p>FPT University</p>
+		</div>
+	</div>
+	</div>
+
+</section>
+
+<section class="containers">
+	<h1 style="text-align: center">Work Experience</h1>
+	<br>
+<p style="text-align: center;">Internship and work at Urah NetWork. Participate in company projects such as cartoon "your body is yours" "Son Tinh Thuy Tinh", website "developmentinvietnam", "vimothanoidangsong" ...</p>
+</section>
+
+</section>
+
+<section class="containers">
+	<h1 style="text-align: center">My Skills</h1>
+	 <br>
+	 <div class="flex-wrapper">
+<div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart ai" >
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Ai</text>
+    </svg>
+  </div>
+<div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart ps">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="40, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Ps</text>
+    </svg>
+  </div>
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart id">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="35, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Id</text>
+    </svg>
+  </div>
+<div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart ae">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="30, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Ae</text>
+    </svg>
+  </div>
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart pr">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="40, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Pr</text>
+    </svg>
+  </div>
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart maya">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="70, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Maya</text>
+    </svg>
+  </div>
+  <div class="single-chart">
+    <svg viewbox="0 0 36 36" class="circular-chart moho">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="50, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Moho</text>
+    </svg>
+  </div>
+
+</div>
+</section>
+
+<section class="containers">
+  
+<div class="row">
+	<div class="col-lg-5" style="text-align: right;">
+		 
+		<p style="margin:30px">Typography</p>
+		<p style="margin:30px">Animation</p>
+		<p style="margin:30px">3D Modeling</p>
+		<p style="margin:30px">Web Design</p>
+		
+	</div>
+
+	<div class="col-lg-7">
+   <div class="containerbar">    
+  <div class="progress1 progress-moved">
+    <div class="progress-bar1" >
+    </div>                       
+  </div> 
+</div>
+
+   <div class="containerbar">    
+  <div class="progress1 progress-moved2">
+    <div class="progress-bar1" >
+    </div>                       
+  </div> 
+</div>
+
+   <div class="containerbar">    
+  <div class="progress1 progress-moved3">
+    <div class="progress-bar1" >
+    </div>                       
+  </div> 
+</div>
+
+   <div class="containerbar">    
+  <div class="progress1 progress-moved4">
+    <div class="progress-bar1" >
+    </div>                       
+  </div> 
+</div>
+</div>
+</div>
+
+</section>
+
+<section style="text-align: center;"><br><br>
+	<button type="button" class="button" style="background-color: white;color: black" onclick="window.location.href='Contact.html'">HIRE ME</button>
+<br><br><br><br>
+</section>
+
+
+<br>
+
+<div class="footer">
+  <a href="https://www.facebook.com/T.Xown/" class="fa fa-facebook"></a>
+  <a href="https://www.behance.net/Xown" class="fa fa-behance"></a>
+  <a href="https://www.pinterest.com/THXown" class="fa fa-pinterest"></a>
+  <a href="https://www.youtube.com/channel/UCVlrMgt-C0-qkifxMxHFt3w?view_as=subscriber" class="fa fa-youtube"></a>
+</div>
+
+</body>
+</html>
